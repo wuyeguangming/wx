@@ -91,6 +91,7 @@ const allowOrigin = (url) => {
 const handleSign = (req, res) => {
   const url = decodeURIComponent(req.query.url)
   const cachedItem = cachedData[url]
+  console.log(url)
 
   res.set({
     'Access-Control-Allow-Origin': '*',
