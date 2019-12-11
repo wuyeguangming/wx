@@ -89,7 +89,7 @@ const allowOrigin = (url) => {
 
 // route
 const handleSign = (req, res) => {
-  const url = req.query.url
+  const url = decodeURIComponent(req.query.url)
   const cachedItem = cachedData[url]
 
   res.set({
