@@ -3,12 +3,16 @@ const express = require('express'), //express 框架
        config = require('./config'),//引入配置文件
        handleSign = require('./sign');
 var app = express();//实例express框架
+app.set('view engine', 'pug')
 
 var wechatApp = new wechat(config); //实例wechat 模块
 
 //用于处理所有进入 3000 端口 get 的连接请求
 app.get('/',function(req,res){
-    wechatApp.auth(req,res);
+    // wechatApp.auth(req,res);
+    // res.send('<>')
+    res.type('text/html; charset=utf-8');
+    res.render('index')
 });
 
 //用于处理所有进入 3000 端口 post 的连接请求
