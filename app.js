@@ -15,6 +15,10 @@ app.get('/',function(req,res){
     res.render('index')
 });
 
+app.get('/MP_verify_JNKQH4hMsbpBDY1Z.txt',function(req,res){
+    res.send('JNKQH4hMsbpBDY1Z');
+});
+
 //用于处理所有进入 3000 端口 post 的连接请求
 app.get('/sign',function(req,res){
     handleSign(req,res);
