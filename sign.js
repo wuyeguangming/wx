@@ -93,7 +93,7 @@ const handleSign = (req, res) => {
   const cachedItem = cachedData[url]
 
   res.set({
-    'Access-Control-Allow-Origin': allowOrigin(url),
+    'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'POST, GET'
   })
 
