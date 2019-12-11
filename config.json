@@ -1,0 +1,11 @@
+{
+    "token":"imkacai",
+    "appID":"wx4c920e4148e090fc",
+    "appScrect":"5175bdd2141fae6ec6e02f4cb970245a",
+    "encodingAESKey":"QVEaa4tWzjGIYaRQKjQjcyJuw3e5d0KQGUAzKavwgB1",
+    "apiDomain":"https://api.weixin.qq.com/",
+    "apiURL":{
+        "accessTokenApi":"%scgi-bin/token?grant_type=client_credential&appid=%s&secret=%s",
+        "createMenu":"%scgi-bin/menu/create?access_token=%s"
+    }
+}
